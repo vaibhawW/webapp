@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HOME | Aith-A</title>
+    <meta charset="utf-8">
+    <!-- html5 version of http-equiv="Content-Type"... -->
+    <meta name="description" content="Personal Website Of Vaibhaw">
+    <meta name="keywords" content="Personal Homepage, Aith-A, Home">
+    <link rel="author" href="https://plus.google.com/u/0/101066514287320874711" />
+    <link rel="canonical" href="http://www.ybhaw.in" />
+    <meta property="og:url" content="http://www.ybhaw.in">
+    <meta property="og:image" content="me.png">
+    <meta property="og:description" content="Personal Website Of Vaibhaw">
+    <meta property="og:title" content="HOME | Aith-A">
+    <meta property="og:site_name" content="HOME | Aith-A">
+    <meta property="og:see_also" content="http://www.ybhaw.in">
+    <meta itemprop="name" content="HOME | Aith-A">
+    <meta itemprop="description" content="Personal Website Of Vaibhaw">
+    <meta itemprop="image" content="me.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://www.ybhaw.in">
+    <meta name="twitter:title" content="HOME | Aith-A">
+    <meta name="twitter:description" content="Personal Website Of Vaibhaw">
+    <meta name="twitter:image" content="me.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <style type="text/css">
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        background: #177082;
+        background: -moz-linear-gradient(top, #177082 0%, #52c9e0 100%);
+        /* FF3.6+ */
+        background: -webkit-linear-gradient(top, #f0f9ff 0%, #52c9e0 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #177082 0%, #52c9e0 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #177082 0%, #52c9e0 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, #177082 0%, #52c9e0 100%);
+    }
+
+    .body {
+        display: none;
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height: 100%;
+    }
+    .main-nav {
+        padding-left: 1vw;
+    }
+    </style>
+</head>
+
+<body onload="preloader()">
+    <!-- preloader -->
+    <div class="progress bodyLoad">
+        <div class="indeterminate"></div>
+    </div>
+    <!-- preloader ends -->
+    <!-- container -->
+    <div class="body">
+        <div class="row" style="position: absolute;top:0vh;width: 100%">
+            <div class="col s12 m4">
+                <div class="card teal darken-1 z-depth-4 right" style="width: 100%">
+                    <div class="card-content white-text">
+                        <span class="card-title">Hi There!</span>
+                        <p>Welcome to this website. I will be building on this website from now on. This will contain few front end works that I will be doing and also some other stuffs that I wanted to share. I hope you like it.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m2">
+            	<div class="card teal darken-3 z-depth-4 white-text">
+            		<div class="card-content">
+            			<span class="card-title">About Me</span>
+            			<p style="padding-bottom: 2vh ">Click here to contact me or know more about me.</p>
+            		</div>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <!-- container ends -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script type="text/javascript">
+    setTimeout(function(){$(".progress").toggleClass("progress");} ,2000);
+    $("body .row div").addClass("scale-transition");
+    $("body .row div").addClass("scale-out");
+
+    function preloader() {
+        $(".bodyLoad").toggleClass("progress");
+        $(".body").css("display", "block");
+    	$("body .row div").addClass("scale-in");
+
+    }
+    </script></body>
+
+</html>
